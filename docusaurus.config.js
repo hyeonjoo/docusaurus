@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Ataccama FrontEnd Docs',
+  tagline: 'Farewell to Notion 👋🏻',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -52,15 +52,16 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Ata FE Docs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Ataccama Logo',
           src: 'img/logo.svg',
+          width: 140,
+          style:{marginRight: "30px"}
         },
         items: [
           {
@@ -71,8 +72,8 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://gitlab.ataccama.dev/engineering/src/one/mmm/one-metadata-frontend',
+            label: 'GitLab',
             position: 'right',
           },
         ],
@@ -93,16 +94,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Slack',
+                href: 'https://ataccama.slack.com',
               },
             ],
           },
@@ -114,13 +107,13 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'GitLab',
+                href: 'https://gitlab.ataccama.dev/engineering/src/one/mmm/one-metadata-frontend',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ataccama FrontEnd Docs. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
